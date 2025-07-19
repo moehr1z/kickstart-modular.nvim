@@ -38,6 +38,7 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.autopairs',
   require 'plugins.neo-tree',
+  require 'plugins.lazygit',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
