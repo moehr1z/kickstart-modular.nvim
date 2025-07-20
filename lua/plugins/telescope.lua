@@ -88,7 +88,6 @@ return {
         builtin.buffers {
           sort_mru = true,
           ignore_current_buffer = true,
-          show_all_buffers = false,
         }
       end, { desc = '[ ] Find existing buffers' })
 
