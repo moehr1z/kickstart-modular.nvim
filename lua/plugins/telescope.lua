@@ -86,7 +86,6 @@ return {
       vim.keymap.set('n', '<leader><leader>', function()
         builtin.buffers {
           sort_mru = true,
-          ignore_current_buffer = true,
         }
       end, { desc = '[ ] Find existing buffers' })
 
