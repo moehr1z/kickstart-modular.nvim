@@ -9,12 +9,12 @@ return {
     {
       '<leader>xx',
       '<cmd>Trouble diagnostics toggle<cr>',
-      desc = 'Diagnostics (Trouble)',
+      desc = 'Diagnostics',
     },
     {
       '<leader>xX',
       '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
-      desc = 'Buffer Diagnostics (Trouble)',
+      desc = 'Buffer Diagnostics',
     },
     {
       '<leader>cs',
@@ -23,8 +23,13 @@ return {
     },
     {
       '<leader>xt',
-      '<cmd>Trouble qflist toggle<cr>',
-      desc = 'Quickfix List',
+      '<cmd>TodoTrouble<cr>',
+      desc = 'TODOs list',
+    },
+    {
+      '<leader>xT',
+      '<cmd>TodoTrouble filter.buf=0<cr>',
+      desc = 'Buffer TODOs list',
     },
   },
 }
