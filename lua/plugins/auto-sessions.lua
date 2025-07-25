@@ -14,10 +14,6 @@ return {
   opts = {
     config = function()
       vim.o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
-      require('auto-session').setup {
-        pre_save_cmds = { 'Neotree close' },
-        post_restore_cmds = { 'Neotree filesystem show' },
-      }
     end,
     -- The following are already the default values, no need to provide them if these are already the settings you want.
     session_lens = {
