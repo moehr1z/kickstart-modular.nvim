@@ -7,12 +7,12 @@ return {
   cmd = 'Trouble',
   keys = {
     {
-      '<leader>tx',
+      '<leader>xx',
       '<cmd>Trouble diagnostics toggle<cr>',
       desc = 'Diagnostics (Trouble)',
     },
     {
-      '<leader>tX',
+      '<leader>xX',
       '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
       desc = 'Buffer Diagnostics (Trouble)',
     },
@@ -22,7 +22,7 @@ return {
       desc = 'Document Symbols',
     },
     {
-      '<leader>tt',
+      '<leader>xt',
       '<cmd>Trouble qflist toggle<cr>',
       desc = 'Quickfix List',
     },

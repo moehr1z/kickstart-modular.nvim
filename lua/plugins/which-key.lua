@@ -65,7 +65,7 @@ return {
         { '<leader>h', group = '[H]arpoon', icon = '' },
         { '<leader>c', group = '[C]ode', icon = '' },
         { '<leader>ct', group = '[T]oggle', icon = '' },
-        { '<leader>t', group = '[T]rouble', icon = '' },
+        { '<leader>x', group = '[x] Trouble', icon = '' },
         { '<leader>d', group = '[D]ebug', icon = '' },
         { '<leader>q', group = '[q] Sessions', icon = '' },
       },
