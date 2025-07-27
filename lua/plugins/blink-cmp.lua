@@ -1,3 +1,10 @@
+local source_priority = {
+  lsp = 4,
+  path = 3,
+  lazydev = 2,
+  snippets = 1,
+}
+
 return {
   { -- Autocompletion
     'saghen/blink.cmp',
@@ -96,7 +103,22 @@ return {
       -- the rust implementation via `'prefer_rust_with_warning'`
       --
       -- See :h blink-cmp-config-fuzzy for more information
-      fuzzy = { implementation = 'lua' },
+      fuzzy = {
+        implementation = 'lua',
+
+        sorts = {
+          function(a, b)
+            local a_priority = source_priority[a.source_id]
+            local b_priority = source_priority[b.source_id]
+            if a_priority ~= b_priority then
+              return a_priority > b_priority
+            end
+          end,
+          -- defaults
+          'score',
+          'sort_text',
+        },
+      },
 
       -- Shows a signature help window while you type arguments for a function
       signature = { enabled = true },
